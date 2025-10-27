@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fixed {
+            position: fixed;
+            bottom: 40px;
+            box-shadow: 5px 5px 10px rgba(0,0,0);
+            right: 10;
+            padding: 20px;
+        }
+
+        div{
+            height: 200vh;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+      position: fixed faz o elemento ficar fixo na tela, mesmo ao rolar a página.
+      É usado para menus, botões ou barras que devem sempre aparecer.
+      Pode ser movido com top, right, bottom, left.
+      Exemplo:
+      .caixa { position: fixed; bottom: 0; right: 0; }
+    -->
+
+    <div>
+        <p class="fixed">Este parágrafo está em posição fixa.</p>
+    </div>
+</body>
+</html>

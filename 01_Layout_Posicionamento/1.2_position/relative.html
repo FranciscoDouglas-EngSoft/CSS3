@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        div{
+            height: 100vh;
+        }
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 10px;
+            border: 1px solid #000;
+            padding: 10px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+        <!--
+            position: relative permite mover o elemento em relação à sua posição original.
+            Use as propriedades top, right, bottom, left para ajustar o deslocamento.
+            O espaço original do elemento é mantido na página.
+            Exemplo:
+            .caixa { position: relative; top: 20px; left: 10px; }
+        -->
+
+        <div>
+            <p class="relative">Este parágrafo está em posição relativa.</p>
+        </div>
+</body>
+</html>

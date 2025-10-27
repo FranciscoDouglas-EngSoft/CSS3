@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            padding: 10px;
+            font-size: 20px;
+        }
+        div{
+            height: 200vh;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+      position: sticky faz o elemento alternar entre relative e fixed conforme o scroll.
+      Ele fica "grudado" em uma posição até que o usuário role a página além do limite definido.
+      Muito usado para cabeçalhos ou menus que devem ficar visíveis ao rolar.
+      Exemplo:
+      .caixa { position: sticky; top: 0; }
+    -->
+
+    <div>
+        <p class="sticky">Este parágrafo está em posição sticky.</p>
+    </div>
+</body>
+</html>

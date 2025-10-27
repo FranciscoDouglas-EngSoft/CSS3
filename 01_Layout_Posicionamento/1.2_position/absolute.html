@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 50vh;
+            background: lightblue;
+        }
+        .absolute {
+            position: absolute;
+            top: 110px;
+            left: 120px;
+            box-shadow: 5px 5px 10px rgba(0,0,0);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+      position: absolute posiciona o elemento em relação ao elemento pai mais próximo que tenha position diferente de static.
+      O elemento "sai" do fluxo normal da página e pode ser movido com top, right, bottom, left.
+      Exemplo:
+      .caixa { position: absolute; top: 10px; left: 20px; }
+    -->
+
+    <div>
+        <p class="absolute">Este parágrafo está em posição absoluta.</p>
+    </div>
+</body>
+</html>

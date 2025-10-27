@@ -1,0 +1,60 @@
+
+/*
+    Exemplo de uso do z-index em CSS:
+    - z-index controla a ordem de sobreposição dos elementos posicionados.
+    - Quanto maior o valor, mais "acima" o elemento aparece.
+    - Só funciona em elementos com position diferente de static.
+    - Neste exemplo, cada item tem um z-index diferente para mostrar a sobreposição.
+*/
+.item{
+        padding: 10px;
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        gap: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 120px;
+}
+
+/* Cores diferentes para cada item */
+.item:nth-child(1){
+    background-color: lightcoral;
+}
+.item:nth-child(2){
+    background-color: lightblue;
+}
+.item:nth-child(3){
+    background-color: lightgreen;
+}
+.item:nth-child(4){
+    background-color: lightyellow;
+}
+
+/* Estilo para posição absoluta */
+.item {
+    position: absolute;
+    /* position: absolute permite que o z-index funcione */
+}
+.z-index-1{
+    z-index: 1; /* item mais "embaixo" */
+    left: 0;
+}
+.z-index-2{
+    z-index: 2;
+    left: 70px; /* desloca um pouco para a direita */
+}
+.z-index-3{
+    z-index: 3;
+    left: 140px; /* desloca um pouco mais para a direita */
+}
+.z-index-4{
+    z-index: 3; /* item mais "acima" */
+    left: 210px; /* desloca ainda mais para a direita */
+}

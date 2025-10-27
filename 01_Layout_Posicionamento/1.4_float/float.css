@@ -1,0 +1,24 @@
+/*
+  Exemplo de uso da propriedade CSS float:
+  - float faz o elemento "flutuar" à esquerda ou direita do contêiner.
+  - Muito útil para criar layouts com imagens e textos lado a lado.
+  - Use clear para evitar que outros elementos fiquem ao lado do flutuante.
+*/
+.container {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+    /* Removido display: flex para funcionar corretamente com float */
+    height: 100vh;
+}
+.imagem {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+.texto {
+    float: right;
+    width: calc(100% - 320px);
+}
+

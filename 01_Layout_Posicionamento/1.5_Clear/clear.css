@@ -1,0 +1,25 @@
+/*
+  Exemplo de uso da propriedade CSS clear:
+  - clear é usada para evitar que elementos flutuantes (float) fiquem ao lado de outros elementos.
+  - Muito útil para garantir que um novo bloco comece abaixo dos elementos flutuantes.
+  - Valores comuns: left, right, both.
+*/
+.container {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+    height: 100vh;
+}
+.imagem {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+.texto {
+    float: right;
+    width: calc(100% - 320px);
+}
+.limpa {
+    clear: both;
+}
