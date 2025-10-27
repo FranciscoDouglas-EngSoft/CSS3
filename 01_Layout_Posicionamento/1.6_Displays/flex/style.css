@@ -1,0 +1,15 @@
+.exemplo-flex {
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 100vh;
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Alinha itens horizontalmente ao centro */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap;
+}
+
+div{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+}

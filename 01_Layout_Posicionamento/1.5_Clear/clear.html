@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="./clear.css">
 </head>
 <body>
-    <!--
-      A propriedade CSS clear é usada para evitar que elementos flutuantes (float) fiquem ao lado de outros elementos.
-      Muito útil para garantir que um novo bloco comece abaixo dos elementos flutuantes.
-      Exemplo:
-      .limpa { clear: both; }
-    -->
+        <!--
+            Propriedade CSS: clear
+            --------------------------------------------------
+            Usada para controlar o posicionamento de elementos em relação a elementos flutuantes (float).
+            Permite "limpar" o fluxo, fazendo com que o elemento comece abaixo dos elementos flutuantes.
+            Valores comuns: left, right, both.
+            Exemplo prático abaixo:
+        -->
 
-    <div class="container">
-        <img src="/CSS3/img/a_mile.jpg" alt="Imagem Flutuante" class="imagem" >
-        < class="texto">
-            Este é um exemplo de texto que flutua ao lado da imagem. A propriedade float permite que a imagem fique alinhada à esquerda, enquanto o texto se ajusta ao lado direito dela. Isso é útil para criar layouts mais dinâmicos e visualmente interessantes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse. Eius, temporibus! Provident, quia illo. Possimus impedit doloribus odio qui.
-        </p>
+        <div class="container">
+                <img src="/CSS3/img/a_mile.jpg" alt="Imagem Flutuante" class="imagem" >
+                <p class="texto">
+                        Este é um exemplo de texto que flutua ao lado da imagem. A propriedade float permite que a imagem fique alinhada à esquerda, enquanto o texto se ajusta ao lado direito dela. Isso é útil para criar layouts mais dinâmicos e visualmente interessantes.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse. Eius, temporibus! Provident, quia illo. Possimus impedit doloribus odio qui.
+                </p>
+                <div class="limpa"></div>
+                <p class="exemplo-clear">
+                        Este parágrafo aparece abaixo da imagem e do texto flutuante, pois a div com a classe "limpa" usa clear: both.<br>
+                        Isso garante que o conteúdo não "suba" ao lado dos elementos flutuantes.
+                </p>
+        </div>
+
+        <!--
+            Dica:
+            Sempre que usar float, utilize clear para evitar problemas de sobreposição ou layout quebrado.
+            Você pode usar clear: left, clear: right ou clear: both conforme a necessidade.
+        -->
 </body>
 </html>

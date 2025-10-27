@@ -1,0 +1,12 @@
+.visibility p {
+    visibility: visible;
+    background-color: lightgreen;
+}
+.hidden p {
+    visibility: hidden;
+    background-color: lightcoral;
+}
+.collapse p {
+    visibility: collapse;
+    background-color: lightblue;
+}

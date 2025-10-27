@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!--
+            Propriedade CSS: visibility
+            --------------------------------------------------
+            Controla se um elemento é visível ou não, sem removê-lo do fluxo do documento (diferente de display: none).
+            Principais valores:
+            - visible: Elemento aparece normalmente (padrão).
+            - hidden: Elemento fica invisível, mas ainda ocupa espaço na página.
+            - collapse: Usado em elementos de tabela (<tr>, <td>, <th>), o elemento desaparece e não ocupa espaço.
+
+            Exemplos práticos abaixo:
+        -->
+
+        <h2>Exemplo: visibility: visible</h2>
+        <div class="visibility">
+                <p>Este parágrafo está visível.</p>
+                <p>Outro parágrafo visível.</p>
+        </div>
+
+        <h2>Exemplo: visibility: hidden</h2>
+        <div class="hidden">
+                <p>Este parágrafo está invisível, mas ainda ocupa espaço.</p>
+                <p>Outro parágrafo invisível, espaço preservado.</p>
+        </div>
+
+        <h2>Exemplo: visibility: collapse (tabela)</h2>
+        <table border="1" class="tabela-visibility">
+            <caption>Exemplo com visibility: collapse</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td class="collapse">Oculto</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>Visível</td>
+            </tr>
+        </table>
+
+        <h2>Comparação: visibility vs display</h2>
+        <div style="margin-bottom:20px;">
+            <span style="visibility:hidden; background:lightcoral;">Visibility: hidden</span>
+            <span style="display:none; background:lightblue;">Display: none</span>
+            <span style="background:lightgreen;">Visível</span>
+        </div>
+
+        <!--
+            Dica:
+            Use visibility: hidden para esconder elementos sem alterar o layout.
+            Use display: none para remover o elemento do fluxo e do layout.
+        -->
+
+    <!-- Exemplos antigos removidos para dar lugar aos novos, mais completos -->
+</body>
+</html>
