@@ -1,0 +1,17 @@
+/* Grid responsivo usando auto-fit e minmax */
+.grid-responsivo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 14px;
+    padding: 20px;
+    background: #fff3e0;
+}
+.box {
+    background: #ff7043;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
